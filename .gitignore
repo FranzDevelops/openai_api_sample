@@ -1,0 +1,19 @@
+# Compiled Python files
+*.pyc
+
+# Virtual environment
+venv/
+
+# Editor and IDE files
+.idea/
+.vscode/
+
+# Dependency directories
+env/
+lib/
+libs/
+
+# Build and distribution files
+build/
+dist/
+*.egg-info/
