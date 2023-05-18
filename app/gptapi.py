@@ -1,4 +1,3 @@
-import os
 import openai
 from .config import settings
 openai.organization = "org-LkkVXsGWzO96L2wIvMPjYoOw"

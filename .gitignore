@@ -17,3 +17,6 @@ libs/
 build/
 dist/
 *.egg-info/
+
+# Enviroment Variables
+.env
