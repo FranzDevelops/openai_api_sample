@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
+from sqlalchemy import Column, Integer, String, Text, ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql.expression import text
 from sqlalchemy.sql.sqltypes import TIMESTAMP
@@ -11,7 +11,7 @@ class Chat(Base):
 
     id = Column(Integer, primary_key=True, nullable=False)
     message = Column(String(255))
-    response = Column(String(255))
+    completion = Column(Text)
     created_at = Column(TIMESTAMP(timezone=True),
                         nullable=False, server_default=text('now()'))
     owner_id = Column(Integer, ForeignKey(

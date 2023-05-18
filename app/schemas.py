@@ -7,7 +7,6 @@ from pydantic.types import conint
 
 class ChatBase(BaseModel):
     message: str
-    response: str
 
 
 class ChatCreate(ChatBase):
@@ -25,6 +24,7 @@ class UserOut(BaseModel):
 
 class Chat(ChatBase):
     id: int
+    completion: str
     created_at: datetime
     owner_id: int
     owner: UserOut
